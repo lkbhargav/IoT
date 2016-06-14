@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Created by Bhargav on 6/13/2016.
  */
-@RestController
+
 public class controller {
 
     private static GpioPinDigitalOutput pin;
@@ -27,6 +27,6 @@ public class controller {
             pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_18, "MyLED", PinState.LOW);
         }
         pin.toggle();
-        return "Light is On";
+        return "Light Bulb";
     }
 }
