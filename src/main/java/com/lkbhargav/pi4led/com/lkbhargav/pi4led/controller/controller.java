@@ -24,7 +24,7 @@ public class controller {
         if(pin == null)
         {
             GpioController gpio = GpioFactory.getInstance();
-            pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_18, "MyLED", PinState.LOW);
+            pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_01, "MyLED", PinState.LOW);
         }
         pin.toggle();
         return "Light Bulb";
