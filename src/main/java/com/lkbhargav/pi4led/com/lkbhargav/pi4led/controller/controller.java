@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Created by Bhargav on 6/13/2016.
  */
-
+@RestController
 public class controller {
 
     private static GpioPinDigitalOutput pin;
