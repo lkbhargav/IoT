@@ -100,7 +100,7 @@ public class controller {
         pin9.toggle();
         return "LED 9 is On";
     }
-    
+
     public void initialize()
     {
             if(pin0 == null)
@@ -168,11 +168,17 @@ public class controller {
     public String timer() throws InterruptedException {
         int i = 60;
 
-        while(i > 0)
+        while(i >= 0)
         {
             int j = 5;
             int[] num = new int[6];
             initialize();
+            pin9.low();
+            pin8.low();
+            pin7.low();
+            pin6.low();
+            pin5.low();
+            pin4.low();
             String val = converter(i);
 
             while(val.length() < 6)
@@ -187,7 +193,7 @@ public class controller {
                 j--;
             }
 
-            i--;
+
 
             if(num[5] == 1)
             {
@@ -221,6 +227,8 @@ public class controller {
 
             Thread.sleep(1000);
 
+
+            i--;
         }
         return "Timer is running";
     }
