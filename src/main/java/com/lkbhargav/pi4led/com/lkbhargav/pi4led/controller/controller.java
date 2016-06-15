@@ -21,18 +21,86 @@ public class controller {
         return "index";
     }
 
-    @RequestMapping("/light")
-    public String light()
+    @RequestMapping("/light0")
+    public String light0()
     {
-        if(pin0 == null)
-        {
-            GpioController gpio = GpioFactory.getInstance();
-            pin0 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_00, "MyLED", PinState.LOW);
-        }
+        initialize();
         pin0.toggle();
         return "LED 0 is On";
     }
 
+    @RequestMapping("/light1")
+    public String light1()
+    {
+        initialize();
+        pin1.toggle();
+        return "LED 1 is On";
+    }
+
+    @RequestMapping("/light2")
+    public String light2()
+    {
+        initialize();
+        pin2.toggle();
+        return "LED 2 is On";
+    }
+
+    @RequestMapping("/light3")
+    public String light3()
+    {
+        initialize();
+        pin3.toggle();
+        return "LED 3 is On";
+    }
+
+    @RequestMapping("/light4")
+    public String light4()
+    {
+        initialize();
+        pin4.toggle();
+        return "LED 4 is On";
+    }
+
+    @RequestMapping("/light5")
+    public String light5()
+    {
+        initialize();
+        pin5.toggle();
+        return "LED 5 is On";
+    }
+
+    @RequestMapping("/light6")
+    public String light6()
+    {
+        initialize();
+        pin6.toggle();
+        return "LED 6 is On";
+    }
+
+    @RequestMapping("/light7")
+    public String light7()
+    {
+        initialize();
+        pin7.toggle();
+        return "LED 7 is On";
+    }
+
+    @RequestMapping("/light8")
+    public String light8()
+    {
+        initialize();
+        pin8.toggle();
+        return "LED 8 is On";
+    }
+
+    @RequestMapping("/light9")
+    public String light9()
+    {
+        initialize();
+        pin9.toggle();
+        return "LED 9 is On";
+    }
+    
     public void initialize()
     {
             if(pin0 == null)
@@ -174,17 +242,5 @@ public class controller {
         }
         String reverse = new StringBuffer(Binnum).reverse().toString();
         return Binnum;
-    }
-
-    @RequestMapping("/blink")
-    public String light1()
-    {
-        if(pin0 == null)
-        {
-            GpioController gpio = GpioFactory.getInstance();
-            pin0 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_01, "MyLED", PinState.LOW);
-        }
-        pin0.blink(500L,5000L);
-        return "Its working kid";
     }
 }
