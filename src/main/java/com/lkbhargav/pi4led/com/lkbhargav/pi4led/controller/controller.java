@@ -12,11 +12,12 @@ public class controller {
 
     private static GpioPinDigitalOutput pin;
 
+    /*
     @RequestMapping("/")
     public String greeting()
     {
-        return "Sai Baba..";
-    }
+        return "index";
+    }*/
 
     @RequestMapping("/light")
     public String light()
