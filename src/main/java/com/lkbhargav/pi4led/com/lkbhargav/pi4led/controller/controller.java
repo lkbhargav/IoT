@@ -12,12 +12,12 @@ public class controller {
 
     private static GpioPinDigitalOutput pin;
 
-    /*
+    
     @RequestMapping("/")
     public String greeting()
     {
         return "index";
-    }*/
+    }
 
     @RequestMapping("/light")
     public String light()
@@ -29,5 +29,17 @@ public class controller {
         }
         pin.toggle();
         return "index";
+    }
+
+    @RequestMapping("/blink")
+    public String light1()
+    {
+        if(pin == null)
+        {
+            GpioController gpio = GpioFactory.getInstance();
+            pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_01, "MyLED", PinState.LOW);
+        }
+        pin.blink(5000L);
+        return "Its working kid";
     }
 }
