@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class controller {
 
-    private static GpioPinDigitalOutput pin;
+    private static GpioPinDigitalOutput pin0, pin1, pin2, pin3, pin4, pi5, pi6, pi7, pi8, pi9;
 
 
     @RequestMapping("/")
@@ -22,24 +22,24 @@ public class controller {
     @RequestMapping("/light")
     public String light()
     {
-        if(pin == null)
+        if(pin0 == null)
         {
             GpioController gpio = GpioFactory.getInstance();
-            pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_01, "MyLED", PinState.LOW);
+            pin0 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_00, "MyLED", PinState.LOW);
         }
-        pin.toggle();
-        return "index";
+        pin0.toggle();
+        return "LED 0 is On";
     }
 
     @RequestMapping("/blink")
     public String light1()
     {
-        if(pin == null)
+        if(pin0 == null)
         {
             GpioController gpio = GpioFactory.getInstance();
-            pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_01, "MyLED", PinState.LOW);
+            pin0 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_01, "MyLED", PinState.LOW);
         }
-        pin.blink(500L,5000L);
+        pin0.blink(500L,5000L);
         return "Its working kid";
     }
 }
