@@ -27,6 +27,6 @@ public class controller {
             pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_01, "MyLED", PinState.LOW);
         }
         pin.toggle();
-        return "Light Bulb";
+        return "index";
     }
 }
