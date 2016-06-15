@@ -12,7 +12,7 @@ public class controller {
 
     private static GpioPinDigitalOutput pin;
 
-    
+
     @RequestMapping("/")
     public String greeting()
     {
@@ -39,7 +39,7 @@ public class controller {
             GpioController gpio = GpioFactory.getInstance();
             pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_01, "MyLED", PinState.LOW);
         }
-        pin.blink(5000L);
+        pin.blink(500L,5000L);
         return "Its working kid";
     }
 }
