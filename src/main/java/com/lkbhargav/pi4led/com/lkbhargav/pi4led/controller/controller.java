@@ -186,7 +186,7 @@ public class controller {
                 val += "0";
             }
 
-            while(j > 0)
+            while(j >= 0)
             {
                 num[j] = Integer.parseInt(val.substring(0,1));
                 val = val.substring(1);
