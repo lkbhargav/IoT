@@ -5,6 +5,8 @@ import com.sun.org.apache.xalan.internal.xsltc.compiler.Parser;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import static java.lang.Thread.sleep;
+
 /**
  * Created by Bhargav on 6/13/2016.
  */
@@ -166,89 +168,97 @@ public class controller {
 
     @RequestMapping("/timer")
     public String timer() throws InterruptedException {
-        int i = 60;
 
-        while(i >= 0)
-        {
-            int j = 5;
-            int[] num = new int[6];
-            initialize();
-            pin9.low();
-            pin8.low();
-            pin7.low();
-            pin6.low();
-            pin5.low();
-            pin4.low();
-            String val = converter(i);
 
-            while(val.length() < 6)
-            {
-                val += "0";
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int i = 60;
+                while(i >= 0)
+                {
+                    int j = 5;
+                    int[] num = new int[6];
+                    initialize();
+                    pin9.low();
+                    pin8.low();
+                    pin7.low();
+                    pin6.low();
+                    pin5.low();
+                    pin4.low();
+                    String val = converter(i);
+
+                    while(val.length() < 6)
+                    {
+                        val += "0";
+                    }
+
+                    while(j >= 0)
+                    {
+                        num[j] = Integer.parseInt(val.substring(0,1));
+                        val = val.substring(1);
+                        j--;
+                    }
+
+                    i--;
+
+                    if(num[5] == 1)
+                    {
+                        pin9.high();
+                    }
+
+                    if(num[4] == 1)
+                    {
+                        pin8.high();
+                    }
+
+                    if(num[3] == 1)
+                    {
+                        pin7.high();
+                    }
+
+                    if(num[2] == 1)
+                    {
+                        pin6.high();
+                    }
+
+                    if(num[1] == 1)
+                    {
+                        pin5.high();
+                    }
+
+                    if(num[0] == 1)
+                    {
+                        pin4.high();
+                    }
+
+                    try {
+                        sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
             }
 
-            while(j >= 0)
+            public String converter(int num)
             {
-                num[j] = Integer.parseInt(val.substring(0,1));
-                val = val.substring(1);
-                j--;
+                String Binnum="";
+                int numbin=0;
+                if(num!=0||num!=1){
+                    while(num>1){
+                        numbin=num%2;
+                        num=num/2;
+                        Binnum=Binnum+numbin;
+                    }
+                    Binnum=Binnum+num;
+                }
+                else{
+                    Binnum=Binnum+num;
+                }
+                String reverse = new StringBuffer(Binnum).reverse().toString();
+                return Binnum;
             }
-
-
-
-            if(num[5] == 1)
-            {
-                pin9.high();
-            }
-
-            if(num[4] == 1)
-            {
-                pin8.high();
-            }
-
-            if(num[3] == 1)
-            {
-                pin7.high();
-            }
-
-            if(num[2] == 1)
-            {
-                pin6.high();
-            }
-
-            if(num[1] == 1)
-            {
-                pin5.high();
-            }
-
-            if(num[0] == 1)
-            {
-                pin4.high();
-            }
-
-            Thread.sleep(1000);
-
-
-            i--;
-        }
+        });
+        thread.start();
         return "Timer is running";
-    }
-
-    public String converter(int num)
-    {
-        String Binnum="";
-        int numbin=0;
-        if(num!=0||num!=1){
-            while(num>1){
-                numbin=num%2;
-                num=num/2;
-                Binnum=Binnum+numbin;
-            }
-            Binnum=Binnum+num;
-        }
-        else{
-            Binnum=Binnum+num;
-        }
-        String reverse = new StringBuffer(Binnum).reverse().toString();
-        return Binnum;
     }
 }
