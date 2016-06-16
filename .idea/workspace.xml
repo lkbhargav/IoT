@@ -41,12 +41,12 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1466065775250" expanded="true" signature="59:38679" ph="..." />
-                <marker date="1466065775250" expanded="true" signature="98:192" ph="..." />
-                <marker date="1466065775250" expanded="true" signature="38605:38622" ph="..." />
-                <marker date="1466065775250" expanded="true" signature="38605:38640" ph="..." />
-                <marker date="1466065775250" expanded="true" signature="38605:38653" ph="..." />
-                <marker date="1466065775250" expanded="true" signature="38605:38668" ph="..." />
+                <marker date="1466065954435" expanded="true" signature="59:38679" ph="..." />
+                <marker date="1466065954435" expanded="true" signature="98:192" ph="..." />
+                <marker date="1466065954435" expanded="true" signature="38605:38622" ph="..." />
+                <marker date="1466065954435" expanded="true" signature="38605:38640" ph="..." />
+                <marker date="1466065954435" expanded="true" signature="38605:38653" ph="..." />
+                <marker date="1466065954435" expanded="true" signature="38605:38668" ph="..." />
               </folding>
             </state>
           </provider>
@@ -103,8 +103,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="111" column="63" selection-start-line="111" selection-start-column="63" selection-end-line="111" selection-end-column="63" />
+            <state relative-caret-position="407">
+              <caret line="109" column="11" selection-start-line="109" selection-start-column="11" selection-end-line="109" selection-end-column="11" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#center#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -678,12 +678,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1466065775250" expanded="true" signature="59:38679" ph="..." />
-            <marker date="1466065775250" expanded="true" signature="98:192" ph="..." />
-            <marker date="1466065775250" expanded="true" signature="38605:38622" ph="..." />
-            <marker date="1466065775250" expanded="true" signature="38605:38640" ph="..." />
-            <marker date="1466065775250" expanded="true" signature="38605:38653" ph="..." />
-            <marker date="1466065775250" expanded="true" signature="38605:38668" ph="..." />
+            <marker date="1466065954435" expanded="true" signature="59:38679" ph="..." />
+            <marker date="1466065954435" expanded="true" signature="98:192" ph="..." />
+            <marker date="1466065954435" expanded="true" signature="38605:38622" ph="..." />
+            <marker date="1466065954435" expanded="true" signature="38605:38640" ph="..." />
+            <marker date="1466065954435" expanded="true" signature="38605:38653" ph="..." />
+            <marker date="1466065954435" expanded="true" signature="38605:38668" ph="..." />
           </folding>
         </state>
       </provider>
@@ -718,8 +718,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="111" column="63" selection-start-line="111" selection-start-column="63" selection-end-line="111" selection-end-column="63" />
+        <state relative-caret-position="407">
+          <caret line="109" column="11" selection-start-line="109" selection-start-column="11" selection-end-line="109" selection-end-column="11" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#center#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
