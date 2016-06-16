@@ -13,6 +13,9 @@ import static java.lang.Thread.sleep;
 /**
  * Created by Bhargav on 6/13/2016.
  */
+
+//@RestController will not allow us to run the html files, so instead we should use @controller
+
 @Controller
 public class controller {
 
@@ -31,7 +34,7 @@ public class controller {
     {
         initialize();
         pin0.toggle();
-        return "LED 0 is On";
+        return "index";
     }
 
     @RequestMapping("/light1")
@@ -39,7 +42,7 @@ public class controller {
     {
         initialize();
         pin1.toggle();
-        return "LED 1 is On";
+        return "index";
     }
 
     @RequestMapping("/light2")
@@ -47,7 +50,7 @@ public class controller {
     {
         initialize();
         pin2.toggle();
-        return "LED 2 is On";
+        return "index";
     }
 
     @RequestMapping("/light3")
@@ -55,7 +58,7 @@ public class controller {
     {
         initialize();
         pin3.toggle();
-        return "LED 3 is On";
+        return "index";
     }
 
     @RequestMapping("/light4")
@@ -63,7 +66,7 @@ public class controller {
     {
         initialize();
         pin4.toggle();
-        return "LED 4 is On";
+        return "index";
     }
 
     @RequestMapping("/light5")
@@ -71,7 +74,7 @@ public class controller {
     {
         initialize();
         pin5.toggle();
-        return "LED 5 is On";
+        return "index";
     }
 
     @RequestMapping("/light6")
@@ -79,7 +82,7 @@ public class controller {
     {
         initialize();
         pin6.toggle();
-        return "LED 6 is On";
+        return "index";
     }
 
     @RequestMapping("/light7")
@@ -87,7 +90,7 @@ public class controller {
     {
         initialize();
         pin7.toggle();
-        return "LED 7 is On";
+        return "index";
     }
 
     @RequestMapping("/light8")
@@ -95,7 +98,7 @@ public class controller {
     {
         initialize();
         pin8.toggle();
-        return "LED 8 is On";
+        return "index";
     }
 
     @RequestMapping("/light9")
@@ -103,7 +106,7 @@ public class controller {
     {
         initialize();
         pin9.toggle();
-        return "LED 9 is On";
+        return "index";
     }
 
     public void initialize()
