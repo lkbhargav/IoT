@@ -330,7 +330,7 @@ public class controller {
         }
         else
         {
-            
+            thread.start();
         }
 
         return "index";
