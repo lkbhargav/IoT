@@ -326,10 +326,11 @@ public class controller {
         if(thread.isAlive())
         {
             thread.interrupt();
+            thread.start();
         }
         else
         {
-            thread.start();
+            
         }
 
         return "index";
