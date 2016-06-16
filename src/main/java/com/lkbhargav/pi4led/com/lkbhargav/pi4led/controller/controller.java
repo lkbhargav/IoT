@@ -290,7 +290,12 @@ public class controller {
             }
         });
 
-        if(thread.isAlive() != true)
+
+        if(thread.isAlive())
+        {
+            thread.interrupt();
+        }
+        else
         {
             thread.start();
         }
