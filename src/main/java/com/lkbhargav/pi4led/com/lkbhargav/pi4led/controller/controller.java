@@ -29,6 +29,40 @@ public class controller {
         return "index";
     }
 
+    @RequestMapping("/turnon")
+    public String turnon()
+    {
+        initialize();
+        pin0.high();
+        pin1.high();
+        pin2.high();
+        pin3.high();
+        pin4.high();
+        pin5.high();
+        pin6.high();
+        pin7.high();
+        pin8.high();
+        pin9.high();
+        return "index";
+    }
+
+    @RequestMapping("/turnoff")
+    public String turnoff()
+    {
+        initialize();
+        pin0.low();
+        pin1.low();
+        pin2.low();
+        pin3.low();
+        pin4.low();
+        pin5.low();
+        pin6.low();
+        pin7.low();
+        pin8.low();
+        pin9.low();
+        return "index";
+    }
+
     @RequestMapping("/light0")
     public String light0()
     {
