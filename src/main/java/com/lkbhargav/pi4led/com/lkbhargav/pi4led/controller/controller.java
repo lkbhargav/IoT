@@ -203,7 +203,7 @@ public class controller {
         }
     }
 
-    @RequestMapping(value = "/timer", method={RequestMethod.POST})
+    @RequestMapping(value = "/timer", method={RequestMethod.POST, RequestMethod.GET})
     public String timer(@RequestParam(value="num", required=false, defaultValue = "1") final int num) throws InterruptedException {
 
         Thread thread = new Thread(new Runnable() {
