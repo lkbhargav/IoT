@@ -140,7 +140,7 @@ public class controller {
         return "index";
     }
 
-    public void initialize()
+    public static void initialize()
     {
             if(pin0 == null)
             {
@@ -204,7 +204,7 @@ public class controller {
     }
 
     @RequestMapping(value = "/timer", method={RequestMethod.POST, RequestMethod.GET})
-    public String timer(@RequestParam(value="num", required=false, defaultValue = "1") final int num) throws InterruptedException {
+    public static String timer(@RequestParam(value="num", required=false, defaultValue = "1") final int num) throws InterruptedException {
 
         Thread thread = new Thread(new Runnable() {
             @Override
