@@ -16,6 +16,8 @@ import static java.lang.Thread.sleep;
 @Controller
 public class controller {
 
+    public static boolean bexit = false;
+
     private static GpioPinDigitalOutput pin0, pin1, pin2, pin3, pin4, pin5, pin6, pin7, pin8, pin9;
 
     //8 = 25 and 9 = 27
@@ -213,7 +215,8 @@ public class controller {
                 int i = (int) Math.floor(num);
                 i = i * 60;
                 initialize();
-                while(i >= 0)
+                bexit = true;
+                while(i >= 0 && bexit == true)
                 {
                     int j = 9;
                     int[] num = new int[10];
@@ -323,9 +326,10 @@ public class controller {
         });
 
 
-        if(thread.isAlive())
+        if(bexit == true)
         {
             thread.interrupt();
+            bexit = false;
             thread.start();
         }
         else
