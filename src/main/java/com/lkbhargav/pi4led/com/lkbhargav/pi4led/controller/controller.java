@@ -2,6 +2,7 @@ package com.lkbhargav.pi4led.com.lkbhargav.pi4led.controller;
 
 import com.pi4j.io.gpio.*;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.Parser;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -12,7 +13,7 @@ import static java.lang.Thread.sleep;
 /**
  * Created by Bhargav on 6/13/2016.
  */
-@RestController
+@Controller
 public class controller {
 
     private static GpioPinDigitalOutput pin0, pin1, pin2, pin3, pin4, pin5, pin6, pin7, pin8, pin9;
