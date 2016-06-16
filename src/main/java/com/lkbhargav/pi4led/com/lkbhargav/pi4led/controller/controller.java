@@ -332,6 +332,6 @@ public class controller {
             thread.start();
         }
 
-        return "Timer is running";
+        return "index";
     }
 }
