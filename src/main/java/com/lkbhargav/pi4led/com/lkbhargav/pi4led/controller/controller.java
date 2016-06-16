@@ -172,6 +172,8 @@ public class controller {
     @ResponseBody
     public String timer(@PathVariable final int num) throws InterruptedException {
 
+
+
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -181,8 +183,8 @@ public class controller {
                 initialize();
                 while(i >= 0)
                 {
-                    int j = 5;
-                    int[] num = new int[6];
+                    int j = 9;
+                    int[] num = new int[10];
 
                     pin9.low();
                     pin8.low();
@@ -190,9 +192,13 @@ public class controller {
                     pin6.low();
                     pin5.low();
                     pin4.low();
+                    pin3.low();
+                    pin2.low();
+                    pin1.low();
+                    pin0.low();
                     String val = converter(i);
 
-                    while(val.length() < 6)
+                    while(val.length() < 10)
                     {
                         val += "0";
                     }
@@ -206,34 +212,54 @@ public class controller {
 
                     i--;
 
-                    if(num[5] == 1)
+                    if(num[9] == 1)
                     {
                         pin9.high();
                     }
 
-                    if(num[4] == 1)
+                    if(num[8] == 1)
                     {
                         pin8.high();
                     }
 
-                    if(num[3] == 1)
+                    if(num[7] == 1)
                     {
                         pin7.high();
                     }
 
-                    if(num[2] == 1)
+                    if(num[6] == 1)
                     {
                         pin6.high();
                     }
 
-                    if(num[1] == 1)
+                    if(num[5] == 1)
                     {
                         pin5.high();
                     }
 
-                    if(num[0] == 1)
+                    if(num[4] == 1)
                     {
                         pin4.high();
+                    }
+
+                    if(num[3] == 1)
+                    {
+                        pin3.high();
+                    }
+
+                    if(num[2] == 1)
+                    {
+                        pin2.high();
+                    }
+
+                    if(num[1] == 1)
+                    {
+                        pin1.high();
+                    }
+
+                    if(num[0] == 1)
+                    {
+                        pin0.high();
                     }
 
                     try {
@@ -263,7 +289,12 @@ public class controller {
                 return Binnum;
             }
         });
-        thread.start();
+
+        if(!thread.isAlive())
+        {
+            thread.start();
+        }
+
         return "Timer is running";
     }
 }
