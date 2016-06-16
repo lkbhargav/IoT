@@ -2,7 +2,9 @@ package com.lkbhargav.pi4led.com.lkbhargav.pi4led.controller;
 
 import com.pi4j.io.gpio.*;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.Parser;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import static java.lang.Thread.sleep;
@@ -166,19 +168,22 @@ public class controller {
         }
     }
 
-    @RequestMapping("/timer")
-    public String timer() throws InterruptedException {
-
+    @RequestMapping("/timer/{num}")
+    @ResponseBody
+    public String timer(@PathVariable final int num) throws InterruptedException {
 
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
-                int i = 60;
+
+                int i = (int) Math.floor(num);
+                i = i * 60;
+                initialize();
                 while(i >= 0)
                 {
                     int j = 5;
                     int[] num = new int[6];
-                    initialize();
+
                     pin9.low();
                     pin8.low();
                     pin7.low();
