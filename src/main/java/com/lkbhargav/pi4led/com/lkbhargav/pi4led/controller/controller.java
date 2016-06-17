@@ -259,8 +259,10 @@ public class controller {
             public void run() {
 
                 int i = (int) Math.floor(num);
-                if(i < 17)
+                if(i <= 17) {
                     i = i * 60;
+                }
+
                 initialize();
 
                 while(i >= 0)
