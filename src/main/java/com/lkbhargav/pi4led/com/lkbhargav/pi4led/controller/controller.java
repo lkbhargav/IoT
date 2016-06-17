@@ -21,7 +21,7 @@ public class controller {
 
     //8 = 25 and 9 = 27
 
-    public Model printLED(Model model)
+    public static Model printLED(Model model)
     {
         model.addAttribute("led1",(pin0.getState().toString().equals("HIGH"))?"on.png":"off.png");
         model.addAttribute("led2",(pin1.getState().toString().equals("HIGH"))?"on.png":"off.png");
