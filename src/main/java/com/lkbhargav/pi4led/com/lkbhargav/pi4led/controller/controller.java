@@ -17,8 +17,6 @@ import static java.lang.Thread.sleep;
 @Controller
 public class controller {
 
-    public static boolean bexit = false;
-
     private static GpioPinDigitalOutput pin0, pin1, pin2, pin3, pin4, pin5, pin6, pin7, pin8, pin9;
 
     //8 = 25 and 9 = 27
@@ -47,7 +45,7 @@ public class controller {
     }
 
     @RequestMapping("/turnon")
-    public String turnon()
+    public String turnon(Model m)
     {
         initialize();
         pin0.high();
@@ -60,11 +58,12 @@ public class controller {
         pin7.high();
         pin8.high();
         pin9.high();
+        m = printLED(m);
         return "index";
     }
 
     @RequestMapping("/turnoff")
-    public String turnoff()
+    public String turnoff(Model m)
     {
         initialize();
         pin0.low();
@@ -77,86 +76,97 @@ public class controller {
         pin7.low();
         pin8.low();
         pin9.low();
+        m = printLED(m);
         return "index";
     }
 
     @RequestMapping("/light0")
-    public String light0()
+    public String light0(Model m)
     {
         initialize();
         pin0.toggle();
+        m = printLED(m);
         return "index";
     }
 
     @RequestMapping("/light1")
-    public String light1()
+    public String light1(Model m)
     {
         initialize();
         pin1.toggle();
+        m = printLED(m);
         return "index";
     }
 
     @RequestMapping("/light2")
-    public String light2()
+    public String light2(Model m)
     {
         initialize();
         pin2.toggle();
+        m = printLED(m);
         return "index";
     }
 
     @RequestMapping("/light3")
-    public String light3()
+    public String light3(Model m)
     {
         initialize();
         pin3.toggle();
+        m = printLED(m);
         return "index";
     }
 
     @RequestMapping("/light4")
-    public String light4()
+    public String light4(Model m)
     {
         initialize();
         pin4.toggle();
+        m = printLED(m);
         return "index";
     }
 
     @RequestMapping("/light5")
-    public String light5()
+    public String light5(Model m)
     {
         initialize();
         pin5.toggle();
+        m = printLED(m);
         return "index";
     }
 
     @RequestMapping("/light6")
-    public String light6()
+    public String light6(Model m)
     {
         initialize();
         pin6.toggle();
+        m = printLED(m);
         return "index";
     }
 
     @RequestMapping("/light7")
-    public String light7()
+    public String light7(Model m)
     {
         initialize();
         pin7.toggle();
+        m = printLED(m);
         return "index";
     }
 
     @RequestMapping("/light8")
-    public String light8()
+    public String light8(Model m)
     {
         initialize();
         pin8.toggle();
+        m = printLED(m);
         return "index";
     }
 
     @RequestMapping("/light9")
-    public String light9()
+    public String light9(Model m)
     {
         initialize();
         pin9.toggle();
+        m = printLED(m);
         return "index";
     }
 
@@ -224,20 +234,10 @@ public class controller {
     }
 
     @RequestMapping(value="/status", method={RequestMethod.GET, RequestMethod.POST})
-    public String status(Model model)
+    public String status(Model m)
     {
         initialize();
-        model.addAttribute("led1",(pin0.getState().equals("TRUE"))?"on.png":"off.png");
-        model.addAttribute("led2",(pin1.getState().equals("TRUE"))?"on.png":"off.png");
-        model.addAttribute("led3",(pin2.getState().equals("TRUE"))?"on.png":"off.png");
-        model.addAttribute("led4",(pin3.getState().equals("TRUE"))?"on.png":"off.png");
-        model.addAttribute("led5",(pin4.getState().equals("TRUE"))?"on.png":"off.png");
-        model.addAttribute("led6",(pin5.getState().equals("TRUE"))?"on.png":"off.png");
-        model.addAttribute("led7",(pin6.getState().equals("TRUE"))?"on.png":"off.png");
-        model.addAttribute("led8",(pin7.getState().equals("TRUE"))?"on.png":"off.png");
-        model.addAttribute("led9",(pin8.getState().equals("TRUE"))?"on.png":"off.png");
-        model.addAttribute("led10",(pin9.getState().equals("TRUE"))?"on.png":"off.png");
-        model.addAttribute("led11",pin9.getState());
+        m = printLED(m);
         return "index";
     }
 
@@ -360,19 +360,6 @@ public class controller {
                 return Binnum;
             }
         });
-
-
-
-        if(bexit == true)
-        {
-            thread.interrupt();
-            bexit = false;
-            thread.start();
-        }
-        else
-        {
-            thread.start();
-        }
 
         return "index";
     }
