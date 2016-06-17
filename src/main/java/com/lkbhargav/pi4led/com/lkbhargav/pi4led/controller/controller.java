@@ -251,8 +251,8 @@ public class controller {
                 int i = (int) Math.floor(num);
                 i = i * 60;
                 initialize();
-                bexit = true;
-                while(i >= 0 && bexit == true)
+
+                while(i >= 0)
                 {
                     int j = 9;
                     int[] num = new int[10];
