@@ -258,8 +258,8 @@ public class controller {
             @Override
             public void run() {
 
-                //int i = num;
-                int i = (int) Math.floor(num);
+                int i = num;
+                //int i = (int) Math.floor(num);
                 if(i <= 17) {
                     i = i * 60;
                 }
@@ -374,6 +374,8 @@ public class controller {
                 return Binnum;
             }
         });
+
+        thread.start();
         m = printLED(m);
         return "index";
     }
