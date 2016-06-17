@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4f713c32-c6d6-475a-959d-ab4c48aafae2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lkbhargav/pi4led/com/lkbhargav/pi4led/controller/controller.java" afterPath="$PROJECT_DIR$/src/main/java/com/lkbhargav/pi4led/com/lkbhargav/pi4led/controller/controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" />
     </list>
     <ignored path="pi4led.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,13 +41,13 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1466128830024" expanded="true" signature="59:39641" ph="..." />
-                <marker date="1466128830024" expanded="true" signature="98:214" ph="..." />
-                <marker date="1466128830024" expanded="true" signature="192:214" ph="..." />
-                <marker date="1466128830024" expanded="true" signature="39527:39567" ph="..." />
-                <marker date="1466128830024" expanded="true" signature="39527:39584" ph="..." />
-                <marker date="1466128830024" expanded="true" signature="39527:39602" ph="..." />
-                <marker date="1466128830024" expanded="true" signature="39527:39630" ph="..." />
+                <marker date="1466129259671" expanded="true" signature="59:39483" ph="..." />
+                <marker date="1466129259671" expanded="true" signature="98:192" ph="..." />
+                <marker date="1466129259671" expanded="true" signature="39369:39409" ph="..." />
+                <marker date="1466129259671" expanded="true" signature="39369:39426" ph="..." />
+                <marker date="1466129259671" expanded="true" signature="39369:39444" ph="..." />
+                <marker date="1466129259671" expanded="true" signature="39369:39457" ph="..." />
+                <marker date="1466129259671" expanded="true" signature="39369:39472" ph="..." />
               </folding>
             </state>
           </provider>
@@ -77,8 +76,8 @@
       <file leaf-file-name="controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lkbhargav/pi4led/com/lkbhargav/pi4led/controller/controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+            <state relative-caret-position="578">
+              <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -589,13 +588,13 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1466128830024" expanded="true" signature="59:39641" ph="..." />
-            <marker date="1466128830024" expanded="true" signature="98:214" ph="..." />
-            <marker date="1466128830024" expanded="true" signature="192:214" ph="..." />
-            <marker date="1466128830024" expanded="true" signature="39527:39567" ph="..." />
-            <marker date="1466128830024" expanded="true" signature="39527:39584" ph="..." />
-            <marker date="1466128830024" expanded="true" signature="39527:39602" ph="..." />
-            <marker date="1466128830024" expanded="true" signature="39527:39630" ph="..." />
+            <marker date="1466129259671" expanded="true" signature="59:39483" ph="..." />
+            <marker date="1466129259671" expanded="true" signature="98:192" ph="..." />
+            <marker date="1466129259671" expanded="true" signature="39369:39409" ph="..." />
+            <marker date="1466129259671" expanded="true" signature="39369:39426" ph="..." />
+            <marker date="1466129259671" expanded="true" signature="39369:39444" ph="..." />
+            <marker date="1466129259671" expanded="true" signature="39369:39457" ph="..." />
+            <marker date="1466129259671" expanded="true" signature="39369:39472" ph="..." />
           </folding>
         </state>
       </provider>
@@ -682,13 +681,13 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1466128830024" expanded="true" signature="59:39641" ph="..." />
-            <marker date="1466128830024" expanded="true" signature="98:214" ph="..." />
-            <marker date="1466128830024" expanded="true" signature="192:214" ph="..." />
-            <marker date="1466128830024" expanded="true" signature="39527:39567" ph="..." />
-            <marker date="1466128830024" expanded="true" signature="39527:39584" ph="..." />
-            <marker date="1466128830024" expanded="true" signature="39527:39602" ph="..." />
-            <marker date="1466128830024" expanded="true" signature="39527:39630" ph="..." />
+            <marker date="1466129259671" expanded="true" signature="59:39483" ph="..." />
+            <marker date="1466129259671" expanded="true" signature="98:192" ph="..." />
+            <marker date="1466129259671" expanded="true" signature="39369:39409" ph="..." />
+            <marker date="1466129259671" expanded="true" signature="39369:39426" ph="..." />
+            <marker date="1466129259671" expanded="true" signature="39369:39444" ph="..." />
+            <marker date="1466129259671" expanded="true" signature="39369:39457" ph="..." />
+            <marker date="1466129259671" expanded="true" signature="39369:39472" ph="..." />
           </folding>
         </state>
       </provider>
@@ -724,8 +723,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lkbhargav/pi4led/com/lkbhargav/pi4led/controller/controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+        <state relative-caret-position="578">
+          <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

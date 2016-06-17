@@ -23,16 +23,16 @@ public class controller {
 
     public Model printLED(Model model)
     {
-        model.addAttribute("led1",(pin0.getState().equals("HIGH"))?"on.png":"off.png");
-        model.addAttribute("led2",(pin1.getState().equals("HIGH"))?"on.png":"off.png");
-        model.addAttribute("led3",(pin2.getState().equals("HIGH"))?"on.png":"off.png");
-        model.addAttribute("led4",(pin3.getState().equals("HIGH"))?"on.png":"off.png");
-        model.addAttribute("led5",(pin4.getState().equals("HIGH"))?"on.png":"off.png");
-        model.addAttribute("led6",(pin5.getState().equals("HIGH"))?"on.png":"off.png");
-        model.addAttribute("led7",(pin6.getState().equals("HIGH"))?"on.png":"off.png");
-        model.addAttribute("led8",(pin7.getState().equals("HIGH"))?"on.png":"off.png");
-        model.addAttribute("led9",(pin8.getState().equals("HIGH"))?"on.png":"off.png");
-        model.addAttribute("led10",(pin9.getState().equals("HIGH"))?"on.png":"off.png");
+        model.addAttribute("led1",(pin0.getState().toString().equals("HIGH"))?"on.png":"off.png");
+        model.addAttribute("led2",(pin1.getState().toString().equals("HIGH"))?"on.png":"off.png");
+        model.addAttribute("led3",(pin2.getState().toString().equals("HIGH"))?"on.png":"off.png");
+        model.addAttribute("led4",(pin3.getState().toString().equals("HIGH"))?"on.png":"off.png");
+        model.addAttribute("led5",(pin4.getState().toString().equals("HIGH"))?"on.png":"off.png");
+        model.addAttribute("led6",(pin5.getState().toString().equals("HIGH"))?"on.png":"off.png");
+        model.addAttribute("led7",(pin6.getState().toString().equals("HIGH"))?"on.png":"off.png");
+        model.addAttribute("led8",(pin7.getState().toString().equals("HIGH"))?"on.png":"off.png");
+        model.addAttribute("led9",(pin8.getState().toString().equals("HIGH"))?"on.png":"off.png");
+        model.addAttribute("led10",(pin9.getState().toString().equals("HIGH"))?"on.png":"off.png");
         model.addAttribute("led11",pin0.getState());
         return model;
     }
