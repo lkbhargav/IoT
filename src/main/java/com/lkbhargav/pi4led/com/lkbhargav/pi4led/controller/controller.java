@@ -260,9 +260,11 @@ public class controller {
 
                 int i = num;
                 //int i = (int) Math.floor(num);
-                if(i <= 17) {
+                /*if(i <= 17) {
                     i = i * 60;
-                }
+                }*/
+
+                i = i * 60;
 
                 initialize();
 
