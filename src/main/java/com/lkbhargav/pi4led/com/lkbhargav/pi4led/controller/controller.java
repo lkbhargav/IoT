@@ -252,13 +252,14 @@ public class controller {
     }
 
     @RequestMapping(value = "/timer", method={RequestMethod.POST, RequestMethod.GET})
-    public static String timer(@RequestParam(value="num", required=false, defaultValue = "1") final int num) throws InterruptedException {
+    public static String timer(Model m, @RequestParam(value="num", required=false, defaultValue = "1") final int num) throws InterruptedException {
 
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
 
-                int i = (int) Math.floor(num);
+                int i = num;
+                //int i = (int) Math.floor(num);
                 if(i <= 17) {
                     i = i * 60;
                 }
@@ -373,7 +374,7 @@ public class controller {
                 return Binnum;
             }
         });
-
+        m = printLED(m);
         return "index";
     }
 }
