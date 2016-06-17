@@ -33,7 +33,16 @@ public class controller {
         model.addAttribute("led8",(pin7.getState().toString().equals("HIGH"))?"on.png":"off.png");
         model.addAttribute("led9",(pin8.getState().toString().equals("HIGH"))?"on.png":"off.png");
         model.addAttribute("led10",(pin9.getState().toString().equals("HIGH"))?"on.png":"off.png");
-        model.addAttribute("led11",pin0.getState());
+        model.addAttribute("li1",(pin0.getState().toString().equals("HIGH"))?"Off":"On");
+        model.addAttribute("li2",(pin1.getState().toString().equals("HIGH"))?"Off":"On");
+        model.addAttribute("li3",(pin2.getState().toString().equals("HIGH"))?"Off":"On");
+        model.addAttribute("li4",(pin3.getState().toString().equals("HIGH"))?"Off":"On");
+        model.addAttribute("li5",(pin4.getState().toString().equals("HIGH"))?"Off":"On");
+        model.addAttribute("li6",(pin5.getState().toString().equals("HIGH"))?"Off":"On");
+        model.addAttribute("li7",(pin6.getState().toString().equals("HIGH"))?"Off":"On");
+        model.addAttribute("li8",(pin7.getState().toString().equals("HIGH"))?"Off":"On");
+        model.addAttribute("li9",(pin8.getState().toString().equals("HIGH"))?"Off":"On");
+        model.addAttribute("li10",(pin9.getState().toString().equals("HIGH"))?"Off":"On");
         return model;
     }
 
@@ -250,7 +259,8 @@ public class controller {
             public void run() {
 
                 int i = (int) Math.floor(num);
-                i = i * 60;
+                if(i < 17)
+                    i = i * 60;
                 initialize();
 
                 while(i >= 0)
