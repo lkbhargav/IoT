@@ -237,6 +237,7 @@ public class controller {
         model.addAttribute("led8",(pin7.getState().equals("TRUE"))?"on.png":"off.png");
         model.addAttribute("led9",(pin8.getState().equals("TRUE"))?"on.png":"off.png");
         model.addAttribute("led10",(pin9.getState().equals("TRUE"))?"on.png":"off.png");
+        model.addAttribute("led11",pin9.getState());
         return "index";
     }
 
