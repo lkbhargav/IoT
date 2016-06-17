@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4f713c32-c6d6-475a-959d-ab4c48aafae2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lkbhargav/pi4led/com/lkbhargav/pi4led/controller/controller.java" afterPath="$PROJECT_DIR$/src/main/java/com/lkbhargav/pi4led/com/lkbhargav/pi4led/controller/controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" />
     </list>
     <ignored path="pi4led.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,13 +42,13 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1466128401261" expanded="true" signature="59:39471" ph="..." />
-                <marker date="1466128401261" expanded="true" signature="98:214" ph="..." />
-                <marker date="1466128401261" expanded="true" signature="192:214" ph="..." />
-                <marker date="1466128401261" expanded="true" signature="39357:39397" ph="..." />
-                <marker date="1466128401261" expanded="true" signature="39357:39414" ph="..." />
-                <marker date="1466128401261" expanded="true" signature="39357:39432" ph="..." />
-                <marker date="1466128401261" expanded="true" signature="39357:39460" ph="..." />
+                <marker date="1466128830024" expanded="true" signature="59:39641" ph="..." />
+                <marker date="1466128830024" expanded="true" signature="98:214" ph="..." />
+                <marker date="1466128830024" expanded="true" signature="192:214" ph="..." />
+                <marker date="1466128830024" expanded="true" signature="39527:39567" ph="..." />
+                <marker date="1466128830024" expanded="true" signature="39527:39584" ph="..." />
+                <marker date="1466128830024" expanded="true" signature="39527:39602" ph="..." />
+                <marker date="1466128830024" expanded="true" signature="39527:39630" ph="..." />
               </folding>
             </state>
           </provider>
@@ -76,8 +77,8 @@
       <file leaf-file-name="controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lkbhargav/pi4led/com/lkbhargav/pi4led/controller/controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="64" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
+            <state relative-caret-position="595">
+              <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,8 +102,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="130" column="63" selection-start-line="130" selection-start-column="63" selection-end-line="130" selection-end-column="63" />
+            <state relative-caret-position="526">
+              <caret line="131" column="31" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#center#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -588,13 +589,13 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1466128401261" expanded="true" signature="59:39471" ph="..." />
-            <marker date="1466128401261" expanded="true" signature="98:214" ph="..." />
-            <marker date="1466128401261" expanded="true" signature="192:214" ph="..." />
-            <marker date="1466128401261" expanded="true" signature="39357:39397" ph="..." />
-            <marker date="1466128401261" expanded="true" signature="39357:39414" ph="..." />
-            <marker date="1466128401261" expanded="true" signature="39357:39432" ph="..." />
-            <marker date="1466128401261" expanded="true" signature="39357:39460" ph="..." />
+            <marker date="1466128830024" expanded="true" signature="59:39641" ph="..." />
+            <marker date="1466128830024" expanded="true" signature="98:214" ph="..." />
+            <marker date="1466128830024" expanded="true" signature="192:214" ph="..." />
+            <marker date="1466128830024" expanded="true" signature="39527:39567" ph="..." />
+            <marker date="1466128830024" expanded="true" signature="39527:39584" ph="..." />
+            <marker date="1466128830024" expanded="true" signature="39527:39602" ph="..." />
+            <marker date="1466128830024" expanded="true" signature="39527:39630" ph="..." />
           </folding>
         </state>
       </provider>
@@ -681,13 +682,13 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1466128401261" expanded="true" signature="59:39471" ph="..." />
-            <marker date="1466128401261" expanded="true" signature="98:214" ph="..." />
-            <marker date="1466128401261" expanded="true" signature="192:214" ph="..." />
-            <marker date="1466128401261" expanded="true" signature="39357:39397" ph="..." />
-            <marker date="1466128401261" expanded="true" signature="39357:39414" ph="..." />
-            <marker date="1466128401261" expanded="true" signature="39357:39432" ph="..." />
-            <marker date="1466128401261" expanded="true" signature="39357:39460" ph="..." />
+            <marker date="1466128830024" expanded="true" signature="59:39641" ph="..." />
+            <marker date="1466128830024" expanded="true" signature="98:214" ph="..." />
+            <marker date="1466128830024" expanded="true" signature="192:214" ph="..." />
+            <marker date="1466128830024" expanded="true" signature="39527:39567" ph="..." />
+            <marker date="1466128830024" expanded="true" signature="39527:39584" ph="..." />
+            <marker date="1466128830024" expanded="true" signature="39527:39602" ph="..." />
+            <marker date="1466128830024" expanded="true" signature="39527:39630" ph="..." />
           </folding>
         </state>
       </provider>
@@ -713,8 +714,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="130" column="63" selection-start-line="130" selection-start-column="63" selection-end-line="130" selection-end-column="63" />
+        <state relative-caret-position="526">
+          <caret line="131" column="31" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#center#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -723,8 +724,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lkbhargav/pi4led/com/lkbhargav/pi4led/controller/controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="64" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
+        <state relative-caret-position="595">
+          <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
