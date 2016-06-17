@@ -258,13 +258,11 @@ public class controller {
             @Override
             public void run() {
 
-                int i = num;
-                //int i = (int) Math.floor(num);
-                /*if(i <= 17) {
+                //int i = num;
+                int i = (int) Math.floor(num);
+                if(i <= 17) {
                     i = i * 60;
-                }*/
-
-                i = i * 60;
+                }
 
                 initialize();
 
