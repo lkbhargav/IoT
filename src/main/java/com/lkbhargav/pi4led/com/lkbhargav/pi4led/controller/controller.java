@@ -23,9 +23,26 @@ public class controller {
 
     //8 = 25 and 9 = 27
 
-    @RequestMapping("/")
-    public String greeting()
+    public Model printLED(Model model)
     {
+        model.addAttribute("led1",(pin0.getState().equals("TRUE"))?"on.png":"off.png");
+        model.addAttribute("led2",(pin1.getState().equals("TRUE"))?"on.png":"off.png");
+        model.addAttribute("led3",(pin2.getState().equals("TRUE"))?"on.png":"off.png");
+        model.addAttribute("led4",(pin3.getState().equals("TRUE"))?"on.png":"off.png");
+        model.addAttribute("led5",(pin4.getState().equals("TRUE"))?"on.png":"off.png");
+        model.addAttribute("led6",(pin5.getState().equals("TRUE"))?"on.png":"off.png");
+        model.addAttribute("led7",(pin6.getState().equals("TRUE"))?"on.png":"off.png");
+        model.addAttribute("led8",(pin7.getState().equals("TRUE"))?"on.png":"off.png");
+        model.addAttribute("led9",(pin8.getState().equals("TRUE"))?"on.png":"off.png");
+        model.addAttribute("led10",(pin9.getState().equals("TRUE"))?"on.png":"off.png");
+        return model;
+    }
+
+    @RequestMapping("/")
+    public String greeting(Model m)
+    {
+        initialize();
+        m = printLED(m);
         return "index";
     }
 
@@ -210,16 +227,16 @@ public class controller {
     public String status(Model model)
     {
         initialize();
-        model.addAttribute("led1","LED 0 "+pin0.getState());
-        model.addAttribute("led2","LED 1 "+pin1.getState());
-        model.addAttribute("led3","LED 2 "+ pin2.getState());
-        model.addAttribute("led4","LED 3 "+ pin3.getState());
-        model.addAttribute("led5","LED 4 "+ pin4.getState());
-        model.addAttribute("led6","LED 5 "+ pin5.getState());
-        model.addAttribute("led7","LED 6 "+ pin6.getState());
-        model.addAttribute("led8","LED 7 "+ pin7.getState());
-        model.addAttribute("led9","LED 8 "+ pin8.getState());
-        model.addAttribute("led10","LED 9 "+ pin9.getState());
+        model.addAttribute("led1",(pin0.getState().equals("TRUE"))?"on.png":"off.png");
+        model.addAttribute("led2",(pin1.getState().equals("TRUE"))?"on.png":"off.png");
+        model.addAttribute("led3",(pin2.getState().equals("TRUE"))?"on.png":"off.png");
+        model.addAttribute("led4",(pin3.getState().equals("TRUE"))?"on.png":"off.png");
+        model.addAttribute("led5",(pin4.getState().equals("TRUE"))?"on.png":"off.png");
+        model.addAttribute("led6",(pin5.getState().equals("TRUE"))?"on.png":"off.png");
+        model.addAttribute("led7",(pin6.getState().equals("TRUE"))?"on.png":"off.png");
+        model.addAttribute("led8",(pin7.getState().equals("TRUE"))?"on.png":"off.png");
+        model.addAttribute("led9",(pin8.getState().equals("TRUE"))?"on.png":"off.png");
+        model.addAttribute("led10",(pin9.getState().equals("TRUE"))?"on.png":"off.png");
         return "index";
     }
 
