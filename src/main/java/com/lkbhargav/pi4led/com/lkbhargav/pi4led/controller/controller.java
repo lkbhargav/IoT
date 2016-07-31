@@ -2,9 +2,12 @@ package com.lkbhargav.pi4led.com.lkbhargav.pi4led.controller;
 
 import com.pi4j.io.gpio.*;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.Parser;
+import org.apache.tomcat.util.net.URL;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
+import java.net.MalformedURLException;
 
 import static java.lang.Thread.sleep;
 
@@ -17,7 +20,7 @@ import static java.lang.Thread.sleep;
 @Controller
 public class controller {
 
-    private static GpioPinDigitalOutput pin0, pin1, pin2, pin3, pin4, pin5, pin6, pin7, pin8, pin9;
+    public static GpioPinDigitalOutput pin0, pin1, pin2, pin3, pin4, pin5, pin6, pin7, pin8, pin9;
 
     //8 = 25 and 9 = 27
 
@@ -57,6 +60,7 @@ public class controller {
     @RequestMapping("/turnon")
     public String turnon(Model m)
     {
+
         initialize();
         pin0.high();
         pin1.high();
@@ -182,11 +186,11 @@ public class controller {
 
     public static void initialize()
     {
-            if(pin0 == null)
-            {
-                GpioController gpio = GpioFactory.getInstance();
-                pin0 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_00, "MyLED", PinState.LOW);
-            }
+        if(pin0 == null)
+        {
+            GpioController gpio = GpioFactory.getInstance();
+            pin0 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_00, "MyLED", PinState.LOW);
+        }
 
         if(pin1 == null)
         {
@@ -262,6 +266,12 @@ public class controller {
                 //int i = (int) Math.floor(num);
                 if(i <= 17) {
                     i = i * 60;
+                }
+
+                try {
+                    URL url = new URL("http://32.208.103.211:9898/status");
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
                 }
 
                 initialize();
@@ -348,6 +358,7 @@ public class controller {
                     }
 
                     try {
+
                         sleep(1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
