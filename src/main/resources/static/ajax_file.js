@@ -18,7 +18,6 @@ function process() {
         $.getJSON('http://ipinfo.io', function(data){
             data = JSON.stringify(data);
             data = JSON.parse(data);
-
             xmlHttp.open('get', 'http://32.208.103.211/verification.php?ip='+data.ip+'&source=homeAutomation', true);
             xmlHttp.onreadystatechange = handleResponse;
             xmlHttp.send(null);
