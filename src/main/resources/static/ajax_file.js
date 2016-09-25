@@ -18,7 +18,7 @@ function process() {
         $.getJSON('http://ipinfo.io', function(data){
             data = JSON.stringify(data);
             data = JSON.parse(data);
-            xmlHttp.open('get', 'http://32.208.103.211/verification.php?ip='+data.ip+'&source=homeAutomation', true);
+            xmlHttp.open('get', 'http://32.208.103.170/verification.php?ip='+data.ip+'&source=homeAutomation', true);
             xmlHttp.onreadystatechange = handleResponse;
             xmlHttp.send(null);
         });
@@ -46,7 +46,7 @@ function process2() {
             data = JSON.stringify(data);
             data = JSON.parse(data);
             user = prompt("Enter your name to continue", "username");
-            url = 'http://32.208.103.211/textnmail.php?ip='+data.ip+'&source=homeAutomation&user='+user+'&location='+data.loc+'&city='+data.city
+            url = 'http://32.208.103.170/textnmail.php?ip='+data.ip+'&source=homeAutomation&user='+user+'&location='+data.loc+'&city='+data.city
             xmlHttp.open('get',url , true);
             xmlHttp.onreadystatechange = handleResponse2;
             xmlHttp.send(null);
