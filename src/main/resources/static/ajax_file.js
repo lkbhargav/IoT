@@ -18,6 +18,7 @@ function process() {
         $.getJSON('http://ipinfo.io', function(data){
             data = JSON.stringify(data);
             data = JSON.parse(data);
+            // changed an IP address from old (32.208.103.211 to new (32.208.103.170))
             xmlHttp.open('get', 'http://32.208.103.170/verification.php?ip='+data.ip+'&source=homeAutomation', true);
             xmlHttp.onreadystatechange = handleResponse;
             xmlHttp.send(null);
