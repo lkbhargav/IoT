@@ -3,6 +3,7 @@ package com.lkbhargav.pi4led.com.lkbhargav.pi4led.controller;
 import com.pi4j.io.gpio.*;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.Parser;
 import org.apache.tomcat.util.net.URL;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +19,7 @@ import static java.lang.Thread.sleep;
 //@RestController will not allow us to run the html files, so instead we should use @controller
 
 @Controller
+@Scope("singleton")
 public class controller {
 
     public static GpioPinDigitalOutput pin0, pin1, pin2, pin3, pin4, pin5, pin6, pin7, pin8, pin9;

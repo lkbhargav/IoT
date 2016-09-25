@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"> </meta>
+    <title>Title</title>
+    <meta name ="viewport" content ="width=device-width, initial-scale=1"> </meta>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="ajax_file.js"></script>
+</head>
+<body onload="process()">
+
+<div class="container">
+    <div class="row row-content">
+        <center>
+            <h1 style="color:black;"> Control Panel </h1>
+
+            <img th:src="${led1}" height="25px" width="25px"/>
+            <img th:src="${led2}" height="25px" width="25px"/>
+            <img th:src="${led3}" height="25px" width="25px"/>
+            <img th:src="${led4}" height="25px" width="25px"/>
+            <img th:src="${led5}" height="25px" width="25px"/>
+            <img th:src="${led6}" height="25px" width="25px"/>
+            <img th:src="${led7}" height="25px" width="25px"/>
+            <img th:src="${led8}" height="25px" width="25px"/>
+            <img th:src="${led9}" height="25px" width="25px"/>
+            <img th:src="${led10}" height="25px" width="25px"/>
+
+            <br/>
+
+            <form method="post" action="status">
+                <button class="btn btn-primary">View Status</button>
+            </form> <br/>
+
+            <table class="table table-hover" width="700px">
+                <thead>
+                <tr>
+                    <th>Functionality</th>
+                    <th>Button</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label>Toggle 1st LED </label></td>
+                        <td><form method="post" action="light0">
+                            <button class="btn btn-info" th:text="${li1}">On</button>
+                        </form></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Toggle 2nd LED </label></td>
+                        <td><form method="post" action="light1">
+                            <button class="btn btn-info" th:text="${li2}">On</button>
+                        </form></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Toggle 3rd LED </label></td>
+                        <td><form method="post" action="light2">
+                            <button class="btn btn-info" th:text="${li3}">On</button>
+                        </form></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Toggle 4th LED </label></td>
+                        <td><form method="post" action="light3">
+                            <button class="btn btn-info" th:text="${li4}">On</button>
+                        </form></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Toggle 5th LED </label></td>
+                        <td><form method="post" action="light4">
+                            <button class="btn btn-info" th:text="${li5}">On</button>
+                        </form></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Toggle 6th LED </label></td>
+                        <td><form method="post" action="light5">
+                            <button class="btn btn-info" th:text="${li6}">On</button>
+                        </form></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Toggle 7th LED </label></td>
+                        <td><form method="post" action="light6">
+                            <button class="btn btn-info" th:text="${li7}">On</button>
+                        </form></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Toggle 8th LED </label></td>
+                        <td><form method="post" action="light7">
+                            <button class="btn btn-info" th:text="${li8}">On</button>
+                        </form></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Toggle 9th LED </label></td>
+                        <td><form method="post" action="light8">
+                            <button class="btn btn-info" th:text="${li9}">On</button>
+                        </form></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Toggle 10th LED </label></td>
+                        <td><form method="post" action="light9">
+                            <button class="btn btn-info" th:text="${li10}">On</button>
+                        </form></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Turn On all lights </label></td>
+                        <td><form method="post" action="turnon">
+                            <button class="btn btn-success">Turn On</button>
+                        </form></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Turn Off all lights </label></td>
+                        <td><form method="post" action="turnoff">
+                            <button class="btn btn-warning">Turn Off</button>
+                        </form></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Timer (values 1 to 17 in min and above in sec) </label></td>
+                        <td><form method="post" action="timer"> <input type="number" name="num" min="1" max="1024" step="1" placeholder="45"/>
+                            <button class="btn btn-primary">Submit</button>
+                        </form></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </center>
+    </div>
+</div>
+</body>
+</html>
