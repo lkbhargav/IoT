@@ -45,8 +45,7 @@ function process2() {
         $.getJSON('http://ipinfo.io', function(data){
             data = JSON.stringify(data);
             data = JSON.parse(data);
-            user = prompt("Enter your name to continue", "username");
-            url = 'http://32.208.103.211/textnmail.php?ip='+data.ip+'&source=homeAutomation&user='+user+'&location='+data.loc+'&city='+data.city
+            url = 'http://32.208.103.211/textnmail.php?ip='+data.ip+'&source=homeAutomation&user=IoTUser&location='+data.loc+'&city='+data.city
             xmlHttp.open('get',url , true);
             xmlHttp.onreadystatechange = handleResponse2;
             xmlHttp.send(null);
