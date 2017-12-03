@@ -258,7 +258,7 @@ public class controller {
     }
 
     @RequestMapping(value = "/timer", method={RequestMethod.POST, RequestMethod.GET})
-    public static String timer(Model m, @RequestParam(value="num", required=false, defaultValue = "1") final int num) throws InterruptedException {
+    public static String timer(Model m, @RequestParam(value="num", required=false, defaultValue = "1") final int num) {
 
         Thread thread = new Thread(new Runnable() {
             @Override
