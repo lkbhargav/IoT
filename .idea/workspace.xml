@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f713c32-c6d6-475a-959d-ab4c48aafae2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_pi4j_pi4j_core_1_2_S.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/pi4led.iml" afterPath="$PROJECT_DIR$/pi4led.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="pi4led.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+            <state relative-caret-position="221">
+              <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -42,8 +41,8 @@
             <state relative-caret-position="136">
               <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
-                <marker date="1512261707728" expanded="true" signature="55696:55713" ph="..." />
-                <marker date="1512261707728" expanded="true" signature="55696:55744" ph="..." />
+                <marker date="1512262000078" expanded="true" signature="55703:55720" ph="..." />
+                <marker date="1512262000078" expanded="true" signature="55703:55751" ph="..." />
               </folding>
             </state>
           </provider>
@@ -178,8 +177,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="138" />
-    <option name="y" value="29" />
+    <option name="x" value="1746" />
+    <option name="y" value="-15" />
     <option name="width" value="1440" />
     <option name="height" value="860" />
   </component>
@@ -630,8 +629,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1512261707728" expanded="true" signature="55696:55713" ph="..." />
-            <marker date="1512261707728" expanded="true" signature="55696:55744" ph="..." />
+            <marker date="1512262000078" expanded="true" signature="55703:55720" ph="..." />
+            <marker date="1512262000078" expanded="true" signature="55703:55751" ph="..." />
           </folding>
         </state>
       </provider>
@@ -686,8 +685,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1512261707728" expanded="true" signature="55696:55713" ph="..." />
-            <marker date="1512261707728" expanded="true" signature="55696:55744" ph="..." />
+            <marker date="1512262000078" expanded="true" signature="55703:55720" ph="..." />
+            <marker date="1512262000078" expanded="true" signature="55703:55751" ph="..." />
           </folding>
         </state>
       </provider>
@@ -742,8 +741,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1512261707728" expanded="true" signature="55696:55713" ph="..." />
-            <marker date="1512261707728" expanded="true" signature="55696:55744" ph="..." />
+            <marker date="1512262000078" expanded="true" signature="55703:55720" ph="..." />
+            <marker date="1512262000078" expanded="true" signature="55703:55751" ph="..." />
           </folding>
         </state>
       </provider>
@@ -860,8 +859,8 @@
         <state relative-caret-position="136">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <marker date="1512261707728" expanded="true" signature="55696:55713" ph="..." />
-            <marker date="1512261707728" expanded="true" signature="55696:55744" ph="..." />
+            <marker date="1512262000078" expanded="true" signature="55703:55720" ph="..." />
+            <marker date="1512262000078" expanded="true" signature="55703:55751" ph="..." />
           </folding>
         </state>
       </provider>
@@ -934,8 +933,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+        <state relative-caret-position="221">
+          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
           <folding />
         </state>
       </provider>
